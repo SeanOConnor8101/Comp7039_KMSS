@@ -50,7 +50,10 @@ def race_results(races_location):
         print(f"{i}: {races_location[i]}")
     user_input = read_integer_between_numbers(
         "Choice > ", 1, len(races_location))
-    venue = races_location[user_input - 1]
+    #split the line at ','
+    venue = races_location[user_input - 1].split(',')
+    venue = venue[0]
+    print('test:', venue)
     id, time_taken = reading_race_results(venue)
     return id, time_taken, venue
 
@@ -61,6 +64,7 @@ def race_venues():
     races_location = []
     for line in lines:
         races_location.append(line.strip("\n"))
+
     return races_location
 
 
@@ -127,7 +131,7 @@ def competitors_by_county(name, id):
 
 
 def reading_race_results(location):
-    with open(f"{location}.txt") as input_type:
+    with open(f"{txt_file_path}{location}.txt") as input_type:
         lines = input_type.readlines()
     id = []
     time_taken = []
@@ -240,7 +244,7 @@ def main():
            "\n6. Show all competitors who have won a race \n7. Quit \n>>> "
     input_menu = read_integer_between_numbers(MENU, 1, 7)
 
-    while input_menu == 7:
+    while input_menu != 7:
         if input_menu == 1:
             id, time_taken, venue = race_results(races_location)
             fastest_runner = winner_of_race(id, time_taken)
