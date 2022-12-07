@@ -40,22 +40,29 @@ def runners_data():
     for line in lines:
         split_line = line.split(",")
         runners_name.append(split_line[0])
-        id = split_line[0].strip("\n")
+        id = split_line[1].strip("\n")
         runners_id.append(id)
     return runners_name, runners_id
+    #print(runners_name,"\n",runners_id)
 
 
 def race_results(races_location):
     for i in range(len(races_location)):
-        print(f"{i}: {races_location[i]}")
+        print(f"{i+1}: {races_location[i]}")
     user_input = read_integer_between_numbers(
         "Choice > ", 1, len(races_location))
-    # split the line at ','
+    #split the line at ','
+    print(races_location)
     venue = races_location[user_input - 1].split(',')
-    venue = venue[0]
+    print(venue)
+    print(type(venue))
+    print(user_input)
+    venue = venue[user_input-1]
+    print(type(venue))
     print('test:', venue)
     id, time_taken = reading_race_results(venue)
     return id, time_taken, venue
+    #print(id, time_taken, venue)
 
 
 def race_venues():
@@ -66,6 +73,7 @@ def race_venues():
         races_location.append(line.strip("\n"))
 
     return races_location
+    #print(races_location)
 
 
 def winner_of_race(id, time_taken):
@@ -123,22 +131,52 @@ def competitors_by_county(name, id):
     for i in range(len(name)):
         if id[i].startswith("CK"):
             print(f"{name[i]} ({id[i]})")
-    print("Kerry runners")
+    print("\nKerry runners")
     print("=" * 20)
     for i in range(len(name)):
         if id[i].startswith("KY"):
+            print(f"{name[i]} ({id[i]})")
+    print("\nTipperary runners")
+    print("=" * 20)
+    for i in range(len(name)):
+        if id[i].startswith("TP"):
+            print(f"{name[i]} ({id[i]})")
+    print("\nWaterford runners")
+    print("=" * 20)
+    for i in range(len(name)):
+        if id[i].startswith("WD"):
+            print(f"{name[i]} ({id[i]})")
+    print("\nLimerick runners")
+    print("=" * 20)
+    for i in range(len(name)):
+        if id[i].startswith("LK"):
             print(f"{name[i]} ({id[i]})")
 
 
 def reading_race_results(location):
     with open(f"{txt_file_path}{location}.txt") as input_type:
         lines = input_type.readlines()
+        print(lines)
     id = []
     time_taken = []
-    for line in lines:
-        split_line = line.split(",".strip("\n"))
-        id.append(split_line[0])
-        time_taken.append(int(split_line[1].strip("\n")))
+    #changed to in range len
+    counter = 0
+    for line in range(len(lines)):
+#debuggggggggging
+        # print('t',lines)
+        print(type(line))
+        # print(type(lines))
+        #changed into to str
+        split_line = str(lines).split(",".strip('\n'))
+        split_line = [item.replace('\\n', '').replace('\'','').replace(' ','') for item in split_line]
+        # split_line.append(split_line[line])
+        id.append(split_line[line+counter])
+        counter+=1
+        print(counter)
+        print('line: ',type(line))
+        time_taken.append(int(split_line[line].strip("\n")))
+        print(line)
+
     return id, time_taken
 
 
@@ -249,7 +287,7 @@ def main():
             id, time_taken, venue = race_results(races_location)
             fastest_runner = winner_of_race(id, time_taken)
             display_races(id, time_taken, venue, fastest_runner)
-        elif input_menu != 2:
+        elif input_menu == 2:
             users_venue(races_location, runners_id)
         elif input_menu == 3:
             competitors_by_county(runners_name, runners_id)
@@ -266,7 +304,10 @@ def main():
     updating_races_file(races_location)
 
 
-# main()
-runners_name, runners_id = runners_data()
+main()
+#race_results()
+#runners_name, runners_id = runners_data()
+#print(runners_name[0])
+#runners_data()
+#reading_race_results()
 
-print(runners_name[0])

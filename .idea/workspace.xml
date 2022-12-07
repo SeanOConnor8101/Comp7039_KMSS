@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e059a7d-48ed-4a71-b2f9-911d46ffd472" name="Changes" comment="some unit tests. need to look at user input disabling" />
+    <list default="true" id="2e059a7d-48ed-4a71-b2f9-911d46ffd472" name="Changes" comment="some unit tests. need to look at user input disabling">
+      <change beforePath="$PROJECT_DIR$/.idea/Comp7039_KMSS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Comp7039_KMSS.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CI_Project_Data_Files/Races.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CI_Project_Data_Files/Races.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CI_Project_Data_Files/Runners.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CI_Project_Data_Files/Runners.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP7039_CI_Code_BaseV1_0.py" beforeDir="false" afterPath="$PROJECT_DIR$/COMP7039_CI_Code_BaseV1_0.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,7 +47,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/shelt/Documents/Github/Comp7039_KMSS",
+    "last_opened_file_path": "C:/Users/Seán/OneDrive - mycit.ie/Documents/Year 3/Semester 1/Agile Processes/Project/ProjectCode/Comp7039_KMSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -54,7 +61,7 @@
       <recent name="$PROJECT_DIR$/CI_Project_Data_Files" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test.Test_COMP7039_CI_Code_BaseV1_0.test_read_integer">
+  <component name="RunManager" selected="Python.COMP7039_CI_Code_BaseV1_0">
     <configuration name="COMP7039_CI_Code_BaseV1_0" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Comp7039_KMSS" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -177,8 +184,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="some unit tests. need to look at user input disabling" />
     <option name="LAST_COMMIT_MESSAGE" value="some unit tests. need to look at user input disabling" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Comp7039_KMSS$.coverage" NAME=" Coverage Results" MODIFIED="1670383121759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
