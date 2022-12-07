@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e059a7d-48ed-4a71-b2f9-911d46ffd472" name="Changes" comment="some unit tests. need to look at user input disabling">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Q.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Q.txt" afterDir="false" />
-    </list>
+    <list default="true" id="2e059a7d-48ed-4a71-b2f9-911d46ffd472" name="Changes" comment="some unit tests. need to look at user input disabling" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -144,7 +141,7 @@
       <workItem from="1670378890402" duration="220000" />
       <workItem from="1670379128096" duration="648000" />
       <workItem from="1670379805909" duration="3663000" />
-      <workItem from="1670383604662" duration="386000" />
+      <workItem from="1670383604662" duration="716000" />
     </task>
     <task id="LOCAL-00001" summary="some unit tests. need to look at user input disabling">
       <created>1670383489014</created>
@@ -153,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670383489014</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="some unit tests. need to look at user input disabling">
+      <created>1670384043058</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670384043058</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
