@@ -50,7 +50,7 @@ def race_results(races_location):
         print(f"{i}: {races_location[i]}")
     user_input = read_integer_between_numbers(
         "Choice > ", 1, len(races_location))
-    #split the line at ','
+    # split the line at ','
     venue = races_location[user_input - 1].split(',')
     venue = venue[0]
     print('test:', venue)
@@ -266,4 +266,7 @@ def main():
     updating_races_file(races_location)
 
 
-main()
+# main()
+runners_name, runners_id = runners_data()
+
+print(runners_name[0])
