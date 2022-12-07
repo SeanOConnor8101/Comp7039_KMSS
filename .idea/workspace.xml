@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e059a7d-48ed-4a71-b2f9-911d46ffd472" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Comp7039_KMSS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Comp7039_KMSS.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="2e059a7d-48ed-4a71-b2f9-911d46ffd472" name="Changes" comment="some unit tests. need to look at user input disabling">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COMP7039_CI_Code_BaseV1_0.py" beforeDir="false" afterPath="$PROJECT_DIR$/COMP7039_CI_Code_BaseV1_0.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Q.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Q.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +48,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "settings.editor.selected.configurable": "terminal",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -146,8 +143,17 @@
       <updated>1670378887642</updated>
       <workItem from="1670378890402" duration="220000" />
       <workItem from="1670379128096" duration="648000" />
-      <workItem from="1670379805909" duration="3256000" />
+      <workItem from="1670379805909" duration="3663000" />
+      <workItem from="1670383604662" duration="386000" />
     </task>
+    <task id="LOCAL-00001" summary="some unit tests. need to look at user input disabling">
+      <created>1670383489014</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670383489014</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,7 +170,11 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="some unit tests. need to look at user input disabling" />
+    <option name="LAST_COMMIT_MESSAGE" value="some unit tests. need to look at user input disabling" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Comp7039_KMSS$.coverage" NAME=" Coverage Results" MODIFIED="1670383087668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Comp7039_KMSS$.coverage" NAME=" Coverage Results" MODIFIED="1670383121759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
